@@ -14,7 +14,7 @@ class Window:
         self.canvas = Canvas(self.window, width=self.canvaswidth, height=self.canvasheight)
         self.canvas.pack()
 
-  # Spanning across columns
+# Spanning across columns
 
 
 
