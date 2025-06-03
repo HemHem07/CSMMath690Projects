@@ -53,8 +53,8 @@ class Computer():
     def print(self):
         self.rpn.print()
     def returnResult(self):
-        self.result = computeExpression()
-        return self.result[0] 
+        self.result = self.computeExpression()
+        return self.result[0]
 class Parser(): 
     def __init__(self, equation):
         self.equation = equation
@@ -136,15 +136,16 @@ class Tree:
 # x = Computer([5,3,"+",12,15,"+","*"])
 # print(x.computeExpression())
 
-x="2+5-6*7+4"
-tree = Tree(x)
-# tree.print()
-print(tree.traverseLeft())
-computer = Computer(tree.traverseLeft())
-result = computer.returnResult()
-print(result)
-# next: after plus, check for minus. 
-# then *, then /
-# test case: 2 + 5 - 6 + 7
-# print("hello"[0:-1])
-# print(tree.findPlus(['2','3','+','5']))
+if __name__ == "__main__":
+    x = "2+5-6*7+4"
+    tree = Tree(x)
+    # tree.print()
+    print(tree.traverseLeft())
+    computer = Computer(tree.traverseLeft())
+    result = computer.returnResult()
+    print(result)
+    # next: after plus, check for minus.
+    # then *, then /
+    # test case: 2 + 5 - 6 + 7
+    # print("hello"[0:-1])
+    # print(tree.findPlus(['2','3','+','5']))

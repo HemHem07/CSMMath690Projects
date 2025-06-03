@@ -20,7 +20,7 @@ class FirstRoll:
         else: 
             self.point = roll
         return self.point
-    # split this up into 2 methods: one to do the first roll, the second to do the logic of it ()with an inputted number) so that it can be pslit up. 
+    # split this up into 2 methods: one to do the first roll, the second to do the logic of it (with an inputted number) so that it can be split up.
 
 class Point:
     def __init__(self, point):
