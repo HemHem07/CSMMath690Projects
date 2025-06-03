@@ -223,7 +223,7 @@ class ActionButtons:
         self.clear_points_button = Button(self.frame, text="Clear Points", command=self.clear_points)
         self.clear_points_button.pack(side=LEFT, padx=5)
 
-        self.run_full_process_button = Button(self.frame, text="Run Full 75,000 Process", command=self.run_full_process)
+        self.run_full_process_button = Button(self.frame, text="Run Full 100,000 Process", command=self.run_full_process)
         self.run_full_process_button.pack(side=LEFT, padx=5)
 
     def change_bounds(self):
@@ -240,7 +240,7 @@ class ActionButtons:
 
     def run_full_process(self):
         self.main_window.generate_points(num_points=100000)
-        print("Ran full 75,000 point generation process.")
+        print("Ran full 100,000 point generation process.")
 
     def clear_points(self):
         self.main_window.clear_points()
